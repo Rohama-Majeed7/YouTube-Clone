@@ -1,0 +1,183 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            color: gray;
+        }
+        body{
+            background-color:whitesmoke;
+            font-family: 'Baloo 2';
+        }
+    /* navbar */
+    .nav{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        justify-items:center;
+        align-items: center;
+    }
+    .nav-logo{
+        display: grid;
+        grid-template-columns:auto 1fr;
+        align-items: center;
+        gap: 3rem;
+        justify-self: flex-start;
+    }
+    .logo-img{
+        width: 7rem;
+    }
+    .logo-photo{
+        width: 100%;
+        height: 100%;
+    }
+    .nav-icon{
+        font-size: 2rem;
+        color: rgb(17, 16, 16);
+    }
+    .nav-search{
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .search-bar{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        border-radius: 3rem;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    .srch-icon{
+     color:black;
+    }
+    .search{
+        border: none;
+        padding:0.3rem;
+        background: none;
+    }
+    .nav-camera{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 2rem;
+       align-items: center;
+       justify-self: end;
+    }
+    .nav-camera h1{
+        height: 3rem;
+        width: 3rem;
+        border: 2px solid black;
+        border-radius: 50%;
+        text-align: center;
+        color:black;
+        font-size: 2rem;
+    }
+    .mic-icon{
+        font-size: 2rem;
+        color:black;
+        padding: 0.4rem;
+        border: 2px solid black;
+        border-radius: 100%;
+        justify-self: end;
+    }
+    .cam-icon{
+         font-size: 2rem;
+         color:black;
+         padding: 0.4rem;
+         border: 2px solid black;
+         border-radius: 100%;
+    }
+    .bell-icon{
+         font-size: 2rem;
+         border-radius: 100%;
+         padding: 0.5rem;
+         color: black;
+         border: 2px solid black;
+    }
+    /* ==== end navbar ============= */
+
+    /* ===== side bar ============ */
+    section{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: "aside main main main main"
+                             "aside main main main main"
+                             "aside main main main main"
+                             "aside main main main main"
+                             "aside main main main main";
+    }
+    .sidebar{
+        grid-area: aside;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+        border-right:2px solid gray;
+    }
+    .big-info-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .info p{
+        justify-self:start;
+        font-size: 1rem;
+    }
+    .info i{
+        color:black;
+        font-size: 1.5rem;
+        justify-self: center;
+    }
+    /* ======= end sidebar ======== */
+
+    /* ===== main =========== */
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+        gap: 4rem 2rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        border: 2px solid gray;
+        border-radius: 2rem;
+        height: 18rem;
+        position: relative;
+        padding: 0.5rem;
+    }
+    .card-photo{
+        width: 100%;
+        border-radius: 2rem;
+    }
+    .img-logo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .nature-card{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .para{
+        position: absolute;
+        top: 40%;
+        left: 70%;
+        color: white;
+        font-size:1.5rem;
+    }
+    /* ============ end main =========== */
